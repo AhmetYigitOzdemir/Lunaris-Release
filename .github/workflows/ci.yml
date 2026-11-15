@@ -33,9 +33,7 @@ jobs:
             tests/test_spatial_representativeness.py \
             tests/test_candidate_comparison.py \
             tests/test_sun_transitions.py \
-            tests/test_provenance.py \
             tests/test_fetch_lfs_data.py \
-            tests/test_release_diagnostics.py \
             tests/validation/test_lsi_monotonicity.py \
             tests/validation/test_solar_visibility_validation.py \
             -q -p no:cacheprovider
@@ -61,6 +59,22 @@ jobs:
           pip install -r requirements.txt
           pip install -r requirements-dev.txt
 
+      - name: Verify required SPICE kernels
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          required = [
+              "data/Ephemeris/de440s.bsp",
+              "data/Ephemeris/moon_080317.tf",
+              "data/Ephemeris/moon_pa_de418_1950-2050.bpc",
+              "data/Ephemeris/pck00011.tpc",
+          ]
+          missing = [path for path in required if not Path(path).is_file()]
+          if missing:
+              raise SystemExit("Missing required SPICE kernels: " + ", ".join(missing))
+          print("Required SPICE kernels are present")
+          PY
+
       - name: Validate bundled runtime data
         run: python fetch_lfs_data.py
 
@@ -70,7 +84,7 @@ jobs:
   docker-build-and-smoke-test:
     name: Docker build and runtime smoke test
     runs-on: ubuntu-latest
-    needs: unit-tests
+    needs: [unit-tests, data-dependent-tests]
     timeout-minutes: 45
     steps:
       - name: Check out repository without LFS objects

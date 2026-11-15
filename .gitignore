@@ -1,13 +1,12 @@
-# Python önbellekleri
+# Python caches
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .ruff_cache/
 
-# Çıkışlar ve veri dosyaları
+# Generated outputs
 outputs/
 
-# Büyük veri dosyaları
-data/
-*.img
+# Large runtime DEM (distribute separately or with Git LFS)
+data/ldem_80s_40m_float.img

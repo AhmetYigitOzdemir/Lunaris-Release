@@ -253,6 +253,27 @@ def fetch_lfs_object(
         raise
 
 
+def verify_checksum_manifest() -> None:
+    manifest = Path("data/SHA256SUMS")
+    if not manifest.is_file():
+        raise RuntimeError("Missing data/SHA256SUMS")
+    for line in manifest.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        expected_hash, relative_path = line.split(None, 1)
+        relative_path = relative_path.strip()
+        path = Path(relative_path)
+        if not path.is_file():
+            raise RuntimeError(f"Missing runtime data file listed in SHA256SUMS: {relative_path}")
+        actual_hash = sha256_file(path)
+        if actual_hash.lower() != expected_hash.lower():
+            raise RuntimeError(
+                f"SHA-256 mismatch for {relative_path}: "
+                f"actual={actual_hash}, expected={expected_hash}"
+            )
+    print("All entries in data/SHA256SUMS validated")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Fetch and validate LUNARIS Git LFS objects.")
     parser.add_argument("--progress", action="store_true", help="Show download progress.")
@@ -271,6 +292,7 @@ def main() -> int:
             progress=args.progress,
             timeout=args.timeout,
         )
+    verify_checksum_manifest()
     return 0
 
 
