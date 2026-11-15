@@ -47,7 +47,7 @@ DEFAULT_OUTPUT = BASE_DIR / "outputs" / "south_pole_3d.html"
 PIXEL_SIZE_KM = 0.04
 CENTER_PIXEL = 7599.5
 REFERENCE_RADIUS_KM = 1737.4
-DEFAULT_API_BASE = os.environ.get("LUNARIS_API_BASE", "").rstrip("/")
+DEFAULT_API_BASE = os.environ.get("LUNARIS_API_BASE", "").strip().rstrip("/")
 
 
 def parse_args() -> argparse.Namespace:
@@ -2908,7 +2908,7 @@ def main() -> int:
         config={"displayModeBar": True, "scrollZoom": True, "responsive": True},
     )
     generated_at = datetime.now(UTC).strftime("%Y-%m-%d %H:%M UTC")
-    api_base = args.api_base.rstrip("/")
+    api_base = (args.api_base or "").strip().rstrip("/")
     html_document = (
         HTML_TEMPLATE.replace("__GENERATED_AT__", generated_at)
         .replace("__API_BASE__", json.dumps(api_base))

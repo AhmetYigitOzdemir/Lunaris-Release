@@ -54,14 +54,29 @@ jobs:
           LUNARIS_API_BASE: ${{ vars.LUNARIS_API_BASE }}
         run: |
           python - <<'PY'
+          import json
           import os
           from pathlib import Path
 
-          api_base = os.environ["LUNARIS_API_BASE"]
+          api_base = os.environ["LUNARIS_API_BASE"].strip().rstrip("/")
+
+          if not api_base:
+              raise SystemExit("LUNARIS_API_BASE must not be empty")
+
           html = Path("outputs/south_pole_3d.html").read_text(encoding="utf-8")
-          assert api_base in html, "Production API base was not embedded in the viewer"
-          assert "127.0.0.1:8000" not in html, "Localhost API base remains in the viewer"
-          assert "__API_BASE__" not in html, "API base placeholder remains in the viewer"
+
+          assert json.dumps(api_base) in html, (
+              "Normalized production API base was not embedded in the viewer"
+          )
+
+          assert "127.0.0.1:8000" not in html, (
+              "Localhost API base remains in the viewer"
+          )
+
+          assert "__API_BASE__" not in html, (
+              "API base placeholder remains in the viewer"
+          )
+
           print("Frontend API base verification passed")
           PY
 
