@@ -47,7 +47,7 @@ DEFAULT_OUTPUT = BASE_DIR / "outputs" / "south_pole_3d.html"
 PIXEL_SIZE_KM = 0.04
 CENTER_PIXEL = 7599.5
 REFERENCE_RADIUS_KM = 1737.4
-DEFAULT_API_BASE = os.environ.get("LUNARIS_API_BASE", "http://127.0.0.1:8000").rstrip("/")
+DEFAULT_API_BASE = os.environ.get("LUNARIS_API_BASE", "").rstrip("/")
 
 
 def parse_args() -> argparse.Namespace:

@@ -11,4 +11,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD uvicorn main:app --host 0.0.0.0 --port $PORT
+CMD python south_pole_3d.py --api-base "${LUNARIS_API_BASE:-}" --no-show --output outputs/south_pole_3d.html && uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}

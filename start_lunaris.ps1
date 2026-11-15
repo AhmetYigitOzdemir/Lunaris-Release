@@ -36,7 +36,7 @@ if (-not $ready) {
 }
 
 Write-Host "Building the interactive 3D viewer..."
-python south_pole_3d.py
+python south_pole_3d.py --api-base http://127.0.0.1:8000
 if ($LASTEXITCODE -ne 0) {
     throw "The viewer could not be generated. Check that data\ldem_80s_40m_float.img is present."
 }
