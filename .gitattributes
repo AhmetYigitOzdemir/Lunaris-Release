@@ -4,3 +4,4 @@ outputs/*.gltf filter=lfs diff=lfs merge=lfs -text
 outputs/*.glb filter=lfs diff=lfs merge=lfs -text
 outputs/*.bin filter=lfs diff=lfs merge=lfs -text
 *.lbl filter=lfs diff=lfs merge=lfs -text
+outputs/** filter=lfs diff=lfs merge=lfs -text
