@@ -1,0 +1,230 @@
+{
+  "start_utc": "2026-11-14T00:00:00Z",
+  "end_utc": "2026-11-17T00:00:00Z",
+  "sites": [
+    {
+      "name": "Shackleton (representative)",
+      "lat": -89.9,
+      "lon": 0.0,
+      "initial_clearance_deg": -1.326935,
+      "initial_state": "shadowed",
+      "high_accuracy_transition_count": 1,
+      "high_accuracy_transitions": [
+        {
+          "timestamp_utc": "2026-11-14T13:47:40.839843Z",
+          "type": "sunrise"
+        }
+      ],
+      "true_sunlit_duration_seconds": 209539.16,
+      "true_sunlit_duration_hours": 58.205322,
+      "steps": {
+        "60": {
+          "sample_count": 72,
+          "sunlit_duration_hours": 58.0,
+          "sunlit_duration_seconds": 208800.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 1,
+          "transition_default_timestamp": "2026-11-14T13:45:00Z",
+          "transition_tight_timestamp": "2026-11-14T13:47:40.839843Z",
+          "duration_error_vs_true_seconds": -739.16,
+          "transition_time_error_default_seconds": 160.839843,
+          "transition_time_error_tight_seconds": 0.0
+        },
+        "30": {
+          "sample_count": 144,
+          "sunlit_duration_hours": 58.0,
+          "sunlit_duration_seconds": 208800.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 1,
+          "transition_default_timestamp": "2026-11-14T13:45:00Z",
+          "transition_tight_timestamp": "2026-11-14T13:47:40.839843Z",
+          "duration_error_vs_true_seconds": -739.16,
+          "transition_time_error_default_seconds": 160.839843,
+          "transition_time_error_tight_seconds": 0.0
+        },
+        "15": {
+          "sample_count": 288,
+          "sunlit_duration_hours": 58.0,
+          "sunlit_duration_seconds": 208800.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 1,
+          "transition_default_timestamp": "2026-11-14T13:52:30Z",
+          "transition_tight_timestamp": "2026-11-14T13:47:40.839843Z",
+          "duration_error_vs_true_seconds": -739.16,
+          "transition_time_error_default_seconds": 289.160157,
+          "transition_time_error_tight_seconds": 0.0
+        },
+        "5": {
+          "sample_count": 864,
+          "sunlit_duration_hours": 58.166667,
+          "sunlit_duration_seconds": 209400.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 1,
+          "transition_default_timestamp": "2026-11-14T13:47:30Z",
+          "transition_tight_timestamp": "2026-11-14T13:47:40.839844Z",
+          "duration_error_vs_true_seconds": -139.16,
+          "transition_time_error_default_seconds": 10.839843,
+          "transition_time_error_tight_seconds": 1e-06
+        },
+        "1": {
+          "sample_count": 4320,
+          "sunlit_duration_hours": 58.2,
+          "sunlit_duration_seconds": 209520.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 1,
+          "transition_default_timestamp": "2026-11-14T13:47:30Z",
+          "transition_tight_timestamp": "2026-11-14T13:47:40.839844Z",
+          "duration_error_vs_true_seconds": -19.16,
+          "transition_time_error_default_seconds": 10.839843,
+          "transition_time_error_tight_seconds": 1e-06
+        }
+      }
+    },
+    {
+      "name": "MMA04 (Malapert Massif)",
+      "lat": -86.31,
+      "lon": -0.459,
+      "initial_clearance_deg": -2.949467,
+      "initial_state": "shadowed",
+      "high_accuracy_transition_count": 0,
+      "high_accuracy_transitions": [],
+      "true_sunlit_duration_seconds": 0.0,
+      "true_sunlit_duration_hours": 0.0,
+      "steps": {
+        "60": {
+          "sample_count": 72,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_duration_seconds": 0.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 0,
+          "transition_default_timestamp": null,
+          "transition_tight_timestamp": null,
+          "duration_error_vs_true_seconds": 0.0,
+          "transition_time_error_default_seconds": null,
+          "transition_time_error_tight_seconds": null
+        },
+        "30": {
+          "sample_count": 144,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_duration_seconds": 0.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 0,
+          "transition_default_timestamp": null,
+          "transition_tight_timestamp": null,
+          "duration_error_vs_true_seconds": 0.0,
+          "transition_time_error_default_seconds": null,
+          "transition_time_error_tight_seconds": null
+        },
+        "15": {
+          "sample_count": 288,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_duration_seconds": 0.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 0,
+          "transition_default_timestamp": null,
+          "transition_tight_timestamp": null,
+          "duration_error_vs_true_seconds": 0.0,
+          "transition_time_error_default_seconds": null,
+          "transition_time_error_tight_seconds": null
+        },
+        "5": {
+          "sample_count": 864,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_duration_seconds": 0.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 0,
+          "transition_default_timestamp": null,
+          "transition_tight_timestamp": null,
+          "duration_error_vs_true_seconds": 0.0,
+          "transition_time_error_default_seconds": null,
+          "transition_time_error_tight_seconds": null
+        },
+        "1": {
+          "sample_count": 4320,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_duration_seconds": 0.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 0,
+          "transition_default_timestamp": null,
+          "transition_tight_timestamp": null,
+          "duration_error_vs_true_seconds": 0.0,
+          "transition_time_error_default_seconds": null,
+          "transition_time_error_tight_seconds": null
+        }
+      }
+    },
+    {
+      "name": "PCB01 (Peak near Cabeus B)",
+      "lat": -83.763,
+      "lon": -69.983,
+      "initial_clearance_deg": -18.971527,
+      "initial_state": "shadowed",
+      "high_accuracy_transition_count": 0,
+      "high_accuracy_transitions": [],
+      "true_sunlit_duration_seconds": 0.0,
+      "true_sunlit_duration_hours": 0.0,
+      "steps": {
+        "60": {
+          "sample_count": 72,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_duration_seconds": 0.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 0,
+          "transition_default_timestamp": null,
+          "transition_tight_timestamp": null,
+          "duration_error_vs_true_seconds": 0.0,
+          "transition_time_error_default_seconds": null,
+          "transition_time_error_tight_seconds": null
+        },
+        "30": {
+          "sample_count": 144,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_duration_seconds": 0.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 0,
+          "transition_default_timestamp": null,
+          "transition_tight_timestamp": null,
+          "duration_error_vs_true_seconds": 0.0,
+          "transition_time_error_default_seconds": null,
+          "transition_time_error_tight_seconds": null
+        },
+        "15": {
+          "sample_count": 288,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_duration_seconds": 0.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 0,
+          "transition_default_timestamp": null,
+          "transition_tight_timestamp": null,
+          "duration_error_vs_true_seconds": 0.0,
+          "transition_time_error_default_seconds": null,
+          "transition_time_error_tight_seconds": null
+        },
+        "5": {
+          "sample_count": 864,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_duration_seconds": 0.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 0,
+          "transition_default_timestamp": null,
+          "transition_tight_timestamp": null,
+          "duration_error_vs_true_seconds": 0.0,
+          "transition_time_error_default_seconds": null,
+          "transition_time_error_tight_seconds": null
+        },
+        "1": {
+          "sample_count": 4320,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_duration_seconds": 0.0,
+          "known_coverage_percentage": 100.0,
+          "transition_count": 0,
+          "transition_default_timestamp": null,
+          "transition_tight_timestamp": null,
+          "duration_error_vs_true_seconds": 0.0,
+          "transition_time_error_default_seconds": null,
+          "transition_time_error_tight_seconds": null
+        }
+      }
+    }
+  ]
+}

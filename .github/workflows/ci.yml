@@ -1,0 +1,47 @@
+﻿name: LUNARIS CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+      - name: Run data-independent tests
+        run: >
+          python -m pytest
+          tests/test_earth_los.py
+          tests/test_spatial_representativeness.py
+          tests/test_candidate_comparison.py
+          tests/test_sun_transitions.py
+          tests/test_provenance.py
+          tests/test_release_diagnostics.py
+          tests/validation/test_lsi_monotonicity.py
+          tests/validation/test_solar_visibility_validation.py
+          -q -p no:cacheprovider
+
+  data-dependent-tests:
+    runs-on: ubuntu-latest
+    if: hashFiles('data/ldem_80s_40m_float.img') != ''
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+      - name: Run full test suite with bundled data
+        run: python -m pytest tests/ tests/validation/ -q -p no:cacheprovider

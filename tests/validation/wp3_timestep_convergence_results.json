@@ -1,0 +1,371 @@
+{
+  "sites": [
+    {
+      "name": "Shackleton (representative)",
+      "lat": -89.9,
+      "lon": 0.0,
+      "elevation_m": 0.0,
+      "steps": {
+        "60": {
+          "sample_count": 72,
+          "sunlit_duration_hours": 58.0,
+          "sunlit_percentage": 80.55555555555556,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 0.176,
+          "transition_count": 1,
+          "transitions": [
+            {
+              "timestamp_utc": "2026-11-14T13:45:00Z",
+              "type": "sunrise",
+              "sun_azimuth_deg": 119.637451,
+              "sun_elevation_deg": 1.507135,
+              "reference_horizon_deg": 1.510564,
+              "clearance_deg": -0.003429,
+              "dem_coverage_fraction": 1.0,
+              "converged": true,
+              "iterations": 2,
+              "bracket_start_utc": "2026-11-14T13:00:00Z",
+              "bracket_end_utc": "2026-11-14T14:00:00Z"
+            }
+          ]
+        },
+        "30": {
+          "sample_count": 144,
+          "sunlit_duration_hours": 58.0,
+          "sunlit_percentage": 80.55555555555556,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 0.342,
+          "transition_count": 1,
+          "transitions": [
+            {
+              "timestamp_utc": "2026-11-14T13:45:00Z",
+              "type": "sunrise",
+              "sun_azimuth_deg": 119.637451,
+              "sun_elevation_deg": 1.507135,
+              "reference_horizon_deg": 1.510564,
+              "clearance_deg": -0.003429,
+              "dem_coverage_fraction": 1.0,
+              "converged": true,
+              "iterations": 1,
+              "bracket_start_utc": "2026-11-14T13:30:00Z",
+              "bracket_end_utc": "2026-11-14T14:00:00Z"
+            }
+          ]
+        },
+        "15": {
+          "sample_count": 288,
+          "sunlit_duration_hours": 58.0,
+          "sunlit_percentage": 80.55555555555556,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 0.64,
+          "transition_count": 1,
+          "transitions": [
+            {
+              "timestamp_utc": "2026-11-14T13:52:30Z",
+              "type": "sunrise",
+              "sun_azimuth_deg": 119.573985,
+              "sun_elevation_deg": 1.50723,
+              "reference_horizon_deg": 1.501065,
+              "clearance_deg": 0.006165,
+              "dem_coverage_fraction": 1.0,
+              "converged": true,
+              "iterations": 1,
+              "bracket_start_utc": "2026-11-14T13:45:00Z",
+              "bracket_end_utc": "2026-11-14T14:00:00Z"
+            }
+          ]
+        },
+        "5": {
+          "sample_count": 864,
+          "sunlit_duration_hours": 58.1667,
+          "sunlit_percentage": 80.78703703703704,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 1.924,
+          "transition_count": 1,
+          "transitions": [
+            {
+              "timestamp_utc": "2026-11-14T13:47:30Z",
+              "type": "sunrise",
+              "sun_azimuth_deg": 119.616295,
+              "sun_elevation_deg": 1.507167,
+              "reference_horizon_deg": 1.507398,
+              "clearance_deg": -0.000231,
+              "dem_coverage_fraction": 1.0,
+              "converged": true,
+              "iterations": 1,
+              "bracket_start_utc": "2026-11-14T13:45:00Z",
+              "bracket_end_utc": "2026-11-14T13:50:00Z"
+            }
+          ]
+        },
+        "1": {
+          "sample_count": 4320,
+          "sunlit_duration_hours": 58.2,
+          "sunlit_percentage": 80.83333333333333,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 9.605,
+          "transition_count": 1,
+          "transitions": [
+            {
+              "timestamp_utc": "2026-11-14T13:47:30Z",
+              "type": "sunrise",
+              "sun_azimuth_deg": 119.616295,
+              "sun_elevation_deg": 1.507167,
+              "reference_horizon_deg": 1.507398,
+              "clearance_deg": -0.000231,
+              "dem_coverage_fraction": 1.0,
+              "converged": true,
+              "iterations": 0,
+              "bracket_start_utc": "2026-11-14T13:47:00Z",
+              "bracket_end_utc": "2026-11-14T13:48:00Z"
+            }
+          ]
+        }
+      },
+      "reference_1min": {
+        "sunlit_duration_hours": 58.2,
+        "sunlit_percentage": 80.83333333333333,
+        "transition_count": 1
+      },
+      "convergence_vs_1min": [
+        {
+          "step": 60,
+          "sunlit_duration_error_hours": 0.2,
+          "sunlit_duration_error_seconds": 720.0,
+          "transition_count": 1,
+          "ref_transition_count": 1,
+          "max_transition_time_error_seconds": 0.0,
+          "mean_transition_time_error_seconds": 0.0
+        },
+        {
+          "step": 30,
+          "sunlit_duration_error_hours": 0.2,
+          "sunlit_duration_error_seconds": 720.0,
+          "transition_count": 1,
+          "ref_transition_count": 1,
+          "max_transition_time_error_seconds": 0.0,
+          "mean_transition_time_error_seconds": 0.0
+        },
+        {
+          "step": 15,
+          "sunlit_duration_error_hours": 0.2,
+          "sunlit_duration_error_seconds": 720.0,
+          "transition_count": 1,
+          "ref_transition_count": 1,
+          "max_transition_time_error_seconds": 450.0,
+          "mean_transition_time_error_seconds": 450.0
+        },
+        {
+          "step": 5,
+          "sunlit_duration_error_hours": 0.0333,
+          "sunlit_duration_error_seconds": 119.88,
+          "transition_count": 1,
+          "ref_transition_count": 1,
+          "max_transition_time_error_seconds": 150.0,
+          "mean_transition_time_error_seconds": 150.0
+        }
+      ]
+    },
+    {
+      "name": "MMA04 (Malapert Massif)",
+      "lat": -86.31,
+      "lon": -0.459,
+      "elevation_m": 0.0,
+      "steps": {
+        "60": {
+          "sample_count": 72,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_percentage": 0.0,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 0.165,
+          "transition_count": 0,
+          "transitions": []
+        },
+        "30": {
+          "sample_count": 144,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_percentage": 0.0,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 0.344,
+          "transition_count": 0,
+          "transitions": []
+        },
+        "15": {
+          "sample_count": 288,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_percentage": 0.0,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 0.64,
+          "transition_count": 0,
+          "transitions": []
+        },
+        "5": {
+          "sample_count": 864,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_percentage": 0.0,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 1.899,
+          "transition_count": 0,
+          "transitions": []
+        },
+        "1": {
+          "sample_count": 4320,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_percentage": 0.0,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 9.493,
+          "transition_count": 0,
+          "transitions": []
+        }
+      },
+      "reference_1min": {
+        "sunlit_duration_hours": 0.0,
+        "sunlit_percentage": 0.0,
+        "transition_count": 0
+      },
+      "convergence_vs_1min": [
+        {
+          "step": 60,
+          "sunlit_duration_error_hours": 0.0,
+          "sunlit_duration_error_seconds": 0.0,
+          "transition_count": 0,
+          "ref_transition_count": 0,
+          "max_transition_time_error_seconds": null,
+          "mean_transition_time_error_seconds": null
+        },
+        {
+          "step": 30,
+          "sunlit_duration_error_hours": 0.0,
+          "sunlit_duration_error_seconds": 0.0,
+          "transition_count": 0,
+          "ref_transition_count": 0,
+          "max_transition_time_error_seconds": null,
+          "mean_transition_time_error_seconds": null
+        },
+        {
+          "step": 15,
+          "sunlit_duration_error_hours": 0.0,
+          "sunlit_duration_error_seconds": 0.0,
+          "transition_count": 0,
+          "ref_transition_count": 0,
+          "max_transition_time_error_seconds": null,
+          "mean_transition_time_error_seconds": null
+        },
+        {
+          "step": 5,
+          "sunlit_duration_error_hours": 0.0,
+          "sunlit_duration_error_seconds": 0.0,
+          "transition_count": 0,
+          "ref_transition_count": 0,
+          "max_transition_time_error_seconds": null,
+          "mean_transition_time_error_seconds": null
+        }
+      ]
+    },
+    {
+      "name": "PCB01 (Peak near Cabeus B)",
+      "lat": -83.763,
+      "lon": -69.983,
+      "elevation_m": 0.0,
+      "steps": {
+        "60": {
+          "sample_count": 72,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_percentage": 0.0,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 0.156,
+          "transition_count": 0,
+          "transitions": []
+        },
+        "30": {
+          "sample_count": 144,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_percentage": 0.0,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 0.331,
+          "transition_count": 0,
+          "transitions": []
+        },
+        "15": {
+          "sample_count": 288,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_percentage": 0.0,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 0.641,
+          "transition_count": 0,
+          "transitions": []
+        },
+        "5": {
+          "sample_count": 864,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_percentage": 0.0,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 1.932,
+          "transition_count": 0,
+          "transitions": []
+        },
+        "1": {
+          "sample_count": 4320,
+          "sunlit_duration_hours": 0.0,
+          "sunlit_percentage": 0.0,
+          "known_illumination_coverage_percentage": 100.0,
+          "compute_seconds": 9.756,
+          "transition_count": 0,
+          "transitions": []
+        }
+      },
+      "reference_1min": {
+        "sunlit_duration_hours": 0.0,
+        "sunlit_percentage": 0.0,
+        "transition_count": 0
+      },
+      "convergence_vs_1min": [
+        {
+          "step": 60,
+          "sunlit_duration_error_hours": 0.0,
+          "sunlit_duration_error_seconds": 0.0,
+          "transition_count": 0,
+          "ref_transition_count": 0,
+          "max_transition_time_error_seconds": null,
+          "mean_transition_time_error_seconds": null
+        },
+        {
+          "step": 30,
+          "sunlit_duration_error_hours": 0.0,
+          "sunlit_duration_error_seconds": 0.0,
+          "transition_count": 0,
+          "ref_transition_count": 0,
+          "max_transition_time_error_seconds": null,
+          "mean_transition_time_error_seconds": null
+        },
+        {
+          "step": 15,
+          "sunlit_duration_error_hours": 0.0,
+          "sunlit_duration_error_seconds": 0.0,
+          "transition_count": 0,
+          "ref_transition_count": 0,
+          "max_transition_time_error_seconds": null,
+          "mean_transition_time_error_seconds": null
+        },
+        {
+          "step": 5,
+          "sunlit_duration_error_hours": 0.0,
+          "sunlit_duration_error_seconds": 0.0,
+          "transition_count": 0,
+          "ref_transition_count": 0,
+          "max_transition_time_error_seconds": null,
+          "mean_transition_time_error_seconds": null
+        }
+      ]
+    }
+  ],
+  "steps_min": [
+    60,
+    30,
+    15,
+    5,
+    1
+  ],
+  "start_utc": "2026-11-14T00:00:00Z",
+  "end_utc": "2026-11-17T00:00:00Z"
+}

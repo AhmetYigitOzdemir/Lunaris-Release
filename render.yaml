@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: lunaris-south-pole-navigator
+    env: docker
+    plan: free
+    region: frankfurt
+    autoDeploy: true

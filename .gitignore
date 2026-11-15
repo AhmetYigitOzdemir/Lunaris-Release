@@ -1,0 +1,13 @@
+# Python önbellekleri
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ruff_cache/
+
+# Çıkışlar ve veri dosyaları
+outputs/
+
+# Büyük veri dosyaları
+data/
+*.img
