@@ -11,4 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+RUN python fetch_lfs_data.py
+
 CMD python south_pole_3d.py --api-base "${LUNARIS_API_BASE:-}" --no-show --output outputs/south_pole_3d.html && uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
